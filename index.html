@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JJK Archive</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- reference to CSS -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <!--BOOTSTRAP NAVBAR DROPDOWN -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">JJK ARCHIVE</a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/lore.html">The Cursed World</a>
+          </li>
+          <!-- DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Characters
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="html/characters.html#sorcerers">Jujutsu Sorcerers</a></li>
+              <li><a class="dropdown-item" href="html/characters.html#students">Students</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="html/characters.html#curses">Cursed Spirits &amp; Villains</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!--(Homepage hero section style)-->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9 col-xl-8 text-center">
+
+            <!-- Rotating sigil placeholder -->
+            <img
+              src="images/sigil.png"
+              alt="Jujutsu Kaisen cursed energy sigil"
+              class="hero-sigil mb-4"
+              onerror="this.style.display='none'"
+            >
+
+            <!-- Main Title & Subtitle -->
+            <h1 class="hero-title">
+              Jujutsu Kaisen
+              <span class="hero-subtitle">KNOWlEDGE FOR THE CuRSED</span>
+            </h1>
+
+            <div class="hero-divider"></div>
+
+            <p class="hero-desc">
+              A comprehensive archive cataloguing the lore, clans, cursed techniques, and
+              sorcerers of the Jujutsu world.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="d-flex gap-3 justify-content-center flex-wrap home-cards-row mb-5">
+              <a href="html/lore.html" class="btn-jjk">Explore The Cursed World</a>
+              <a href="html/characters.html" class="btn-jjk btn-jjk-ghost">View Characters</a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ─── BOOTSTRAP CARDS ROW ─── -->
+        <div class="row g-4 mt-3">
+
+          <div class="col-md-4">
+            <div class="card jjk-card h-100">
+              <div class="card-header">The Cursed World</div>
+              <div class="card-body">
+                <h5 class="card-title">The Cursed World</h5>
+                <p class="card-text">
+                  Delve into the origins of cursed energy, Jujutsu sorcery, and
+                  the ancient clans that have shaped the hidden war against cursed spirits
+                  for over a millennium.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="html/lore.html" class="btn-jjk" style="font-size:0.62rem; padding:0.5rem 1.2rem;">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card jjk-card h-100">
+              <div class="card-header">Characters</div>
+              <div class="card-body">
+                <h5 class="card-title">Sorcerers &amp; Curses</h5>
+                <p class="card-text">
+                  Profiles of every key figure — from the students of Jujutsu High to
+                  Special Grade threats like Ryomen Sukuna, the King of Curses.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="html/characters.html" class="btn-jjk" style="font-size:0.62rem; padding:0.5rem 1.2rem;">View Characters</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card jjk-card h-100">
+              <div class="card-header">Community</div>
+              <div class="card-body">
+                <h5 class="card-title">Join the Archive</h5>
+                <p class="card-text">
+                  Fans with deep lore knowledge are always welcome. Submit corrections,
+                  contribute theories, or reach out with questions about the cursed world.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="html/contact.html" class="btn-jjk" style="font-size:0.62rem; padding:0.5rem 1.2rem;">Contact Us</a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /row -->
+
+        <!-- ─── SECOND CARDS ROW ─── -->
+        <div class="row g-4 mt-2">
+
+          <div class="col-md-6">
+            <div class="card jjk-card">
+              <div class="card-body">
+                <span class="jjk-badge mb-2 d-inline-block">Featured</span>
+                <h5 class="card-title">Ryomen Sukuna</h5>
+                <p class="card-text">
+                  The undisputed King of Curses — a sorcerer of the ancient world whose
+                  catastrophic power left twenty cursed fingers scattered across time.
+                  His amusement alone keeps his vessel alive.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card jjk-card">
+              <div class="card-body">
+                <span class="jjk-badge mb-2 d-inline-block">Featured</span>
+                <h5 class="card-title">Satoru Gojo</h5>
+                <p class="card-text">
+                  The strongest sorcerer alive. Wielder of Infinity and the Six Eyes — a
+                  power so absolute that his very existence reshaped the balance of
+                  the jujutsu world.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /row -->
+
+      </div><!-- /container -->
+    </section>
+
+  </main>
+
+  <!--BOOTSTRAP STICKY FOOTER-->
+  <footer class="mt-auto">
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="footer-brand">JJK Archive</div>
+          <p class="footer-tagline mt-1">A fan-made resource. Not affiliated with Gege Akutami or Shueisha.</p>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="html/lore.html">The Cursed World</a></li>
+            <li><a href="html/characters.html">Characters</a></li>
+            <li><a href="html/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="footer-links">
+            <li><a href="html/terms.html">Terms of Use</a></li>
+            <li><a href="html/privacy.html">Privacy Policy</a></li>
+            <li><a href="html/contact.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="mb-0" style="font-size:0.6rem; letter-spacing:0.15em;">
+        &copy; 2026 Jujutsu Kaisen Fan Archive &mdash; Diego Guevara &mdash; IS 117
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
